@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1009B1831F0D8BF00080912A /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1009B1811F0D8BF00080912A /* HockeySDK.framework */; };
+		1009B1841F0D8BF00080912A /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1009B1821F0D8BF00080912A /* HockeySDKResources.bundle */; };
 		10CA1AE51F0C05F600F73D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */; };
 		10CA1AE71F0C05F600F73D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AE61F0C05F600F73D05 /* ViewController.swift */; };
 		10CA1AEA1F0C05F600F73D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA1AE81F0C05F600F73D05 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1009B1811F0D8BF00080912A /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		1009B1821F0D8BF00080912A /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		10CA1AE11F0C05F600F73D05 /* BLESKELE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESKELE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA1AE61F0C05F600F73D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1009B1831F0D8BF00080912A /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1009B1801F0D8BF00080912A /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				1009B1811F0D8BF00080912A /* HockeySDK.framework */,
+				1009B1821F0D8BF00080912A /* HockeySDKResources.bundle */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
 		10CA1AD81F0C05F600F73D05 = {
 			isa = PBXGroup;
 			children = (
+				1009B1801F0D8BF00080912A /* HockeySDK.embeddedframework */,
 				10CA1AE31F0C05F600F73D05 /* BLESKELE */,
 				10CA1AFB1F0C05F600F73D05 /* BLESKELETests */,
 				10CA1B061F0C05F600F73D05 /* BLESKELEUITests */,
@@ -144,6 +160,7 @@
 				10CA1ADD1F0C05F600F73D05 /* Sources */,
 				10CA1ADE1F0C05F600F73D05 /* Frameworks */,
 				10CA1ADF1F0C05F600F73D05 /* Resources */,
+				1009B1721F0D8A7D0080912A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -202,8 +219,8 @@
 				TargetAttributes = {
 					10CA1AE01F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZBNHE8X5F9;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = EUL7UYLX84;
+						ProvisioningStyle = Manual;
 					};
 					10CA1AF71F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -245,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10CA1AF21F0C05F600F73D05 /* LaunchScreen.storyboard in Resources */,
+				1009B1841F0D8BF00080912A /* HockeySDKResources.bundle in Resources */,
 				10CA1AEF1F0C05F600F73D05 /* Assets.xcassets in Resources */,
 				10CA1AEA1F0C05F600F73D05 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +283,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1009B1721F0D8A7D0080912A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10CA1ADD1F0C05F600F73D05 /* Sources */ = {
@@ -429,11 +463,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = EUL7UYLX84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = BLESKELE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
+				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -442,11 +483,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = EUL7UYLX84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = BLESKELE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
+				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

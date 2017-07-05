@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import HockeySDK
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //[[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"be1c2b89e69942d4be00bb6a9844d3c3"];
+        BITHockeyManager.shared().configure(withIdentifier: "be1c2b89e69942d4be00bb6a9844d3c3")
+        // Do some additional configuration if needed here
+        //[[BITHockeyManager sharedHockeyManager] startManager];
+        BITHockeyManager.shared().start()
+        //[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+        BITHockeyManager.shared().authenticator.authenticateInstallation()
+        BITHockeyManager.shared().testIdentifier()
+
+        
         return true
     }
 
