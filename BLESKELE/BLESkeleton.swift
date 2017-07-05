@@ -68,7 +68,8 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
             if peripheral.identifier == thisDevice.deviceIdentifier{
                 manager?.connect(peripheral)
                 let dispatchTime = DispatchTime.now() + .seconds(30)
-                DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: { 
+                DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: {
+                    self.disconnectDevice(thisDevice: thisDevice)
                     if let _ = self.deviceModelDelegate?.deviceToConnect , !self.checkIfConnectedToDevice(device: thisDevice){
                         self.deviceModelDelegate?.deviceToConnect(didConnect: false, withDevice: thisDevice, isTimeout: true)
                         return
