@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10CA1AE51F0C05F600F73D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */; };
+		10CA1AE71F0C05F600F73D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AE61F0C05F600F73D05 /* ViewController.swift */; };
+		10CA1AEA1F0C05F600F73D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA1AE81F0C05F600F73D05 /* Main.storyboard */; };
+		10CA1AED1F0C05F600F73D05 /* BLESKELE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AEB1F0C05F600F73D05 /* BLESKELE.xcdatamodeld */; };
+		10CA1AEF1F0C05F600F73D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA1AEE1F0C05F600F73D05 /* Assets.xcassets */; };
+		10CA1AF21F0C05F600F73D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA1AF01F0C05F600F73D05 /* LaunchScreen.storyboard */; };
+		10CA1AFD1F0C05F600F73D05 /* BLESKELETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1AFC1F0C05F600F73D05 /* BLESKELETests.swift */; };
+		10CA1B081F0C05F600F73D05 /* BLESKELEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B071F0C05F600F73D05 /* BLESKELEUITests.swift */; };
+		10CA1B161F0C06E100F73D05 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B151F0C06E100F73D05 /* BluetoothViewController.swift */; };
+		10CA1B1A1F0C21B900F73D05 /* BLESkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B191F0C21B900F73D05 /* BLESkeleton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10CA1AF91F0C05F600F73D05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10CA1AD91F0C05F600F73D05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CA1AE01F0C05F600F73D05;
+			remoteInfo = BLESKELE;
+		};
+		10CA1B041F0C05F600F73D05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10CA1AD91F0C05F600F73D05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CA1AE01F0C05F600F73D05;
+			remoteInfo = BLESKELE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10CA1AE11F0C05F600F73D05 /* BLESKELE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESKELE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10CA1AE61F0C05F600F73D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10CA1AE91F0C05F600F73D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10CA1AEC1F0C05F600F73D05 /* BLESKELE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BLESKELE.xcdatamodel; sourceTree = "<group>"; };
+		10CA1AEE1F0C05F600F73D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CA1AF11F0C05F600F73D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10CA1AF31F0C05F600F73D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CA1AF81F0C05F600F73D05 /* BLESKELETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLESKELETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CA1AFC1F0C05F600F73D05 /* BLESKELETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESKELETests.swift; sourceTree = "<group>"; };
+		10CA1AFE1F0C05F600F73D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CA1B031F0C05F600F73D05 /* BLESKELEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLESKELEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CA1B071F0C05F600F73D05 /* BLESKELEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESKELEUITests.swift; sourceTree = "<group>"; };
+		10CA1B091F0C05F600F73D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CA1B151F0C06E100F73D05 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		10CA1B191F0C21B900F73D05 /* BLESkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESkeleton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10CA1ADE1F0C05F600F73D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1AF51F0C05F600F73D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1B001F0C05F600F73D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CA1AD81F0C05F600F73D05 = {
+			isa = PBXGroup;
+			children = (
+				10CA1AE31F0C05F600F73D05 /* BLESKELE */,
+				10CA1AFB1F0C05F600F73D05 /* BLESKELETests */,
+				10CA1B061F0C05F600F73D05 /* BLESKELEUITests */,
+				10CA1AE21F0C05F600F73D05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10CA1AE21F0C05F600F73D05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10CA1AE11F0C05F600F73D05 /* BLESKELE.app */,
+				10CA1AF81F0C05F600F73D05 /* BLESKELETests.xctest */,
+				10CA1B031F0C05F600F73D05 /* BLESKELEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10CA1AE31F0C05F600F73D05 /* BLESKELE */ = {
+			isa = PBXGroup;
+			children = (
+				10CA1B191F0C21B900F73D05 /* BLESkeleton.swift */,
+				10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */,
+				10CA1AE61F0C05F600F73D05 /* ViewController.swift */,
+				10CA1AE81F0C05F600F73D05 /* Main.storyboard */,
+				10CA1AEE1F0C05F600F73D05 /* Assets.xcassets */,
+				10CA1AF01F0C05F600F73D05 /* LaunchScreen.storyboard */,
+				10CA1AF31F0C05F600F73D05 /* Info.plist */,
+				10CA1AEB1F0C05F600F73D05 /* BLESKELE.xcdatamodeld */,
+				10CA1B151F0C06E100F73D05 /* BluetoothViewController.swift */,
+			);
+			path = BLESKELE;
+			sourceTree = "<group>";
+		};
+		10CA1AFB1F0C05F600F73D05 /* BLESKELETests */ = {
+			isa = PBXGroup;
+			children = (
+				10CA1AFC1F0C05F600F73D05 /* BLESKELETests.swift */,
+				10CA1AFE1F0C05F600F73D05 /* Info.plist */,
+			);
+			path = BLESKELETests;
+			sourceTree = "<group>";
+		};
+		10CA1B061F0C05F600F73D05 /* BLESKELEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10CA1B071F0C05F600F73D05 /* BLESKELEUITests.swift */,
+				10CA1B091F0C05F600F73D05 /* Info.plist */,
+			);
+			path = BLESKELEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10CA1AE01F0C05F600F73D05 /* BLESKELE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CA1B0C1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELE" */;
+			buildPhases = (
+				10CA1ADD1F0C05F600F73D05 /* Sources */,
+				10CA1ADE1F0C05F600F73D05 /* Frameworks */,
+				10CA1ADF1F0C05F600F73D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLESKELE;
+			productName = BLESKELE;
+			productReference = 10CA1AE11F0C05F600F73D05 /* BLESKELE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10CA1AF71F0C05F600F73D05 /* BLESKELETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CA1B0F1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELETests" */;
+			buildPhases = (
+				10CA1AF41F0C05F600F73D05 /* Sources */,
+				10CA1AF51F0C05F600F73D05 /* Frameworks */,
+				10CA1AF61F0C05F600F73D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CA1AFA1F0C05F600F73D05 /* PBXTargetDependency */,
+			);
+			name = BLESKELETests;
+			productName = BLESKELETests;
+			productReference = 10CA1AF81F0C05F600F73D05 /* BLESKELETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10CA1B021F0C05F600F73D05 /* BLESKELEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CA1B121F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELEUITests" */;
+			buildPhases = (
+				10CA1AFF1F0C05F600F73D05 /* Sources */,
+				10CA1B001F0C05F600F73D05 /* Frameworks */,
+				10CA1B011F0C05F600F73D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CA1B051F0C05F600F73D05 /* PBXTargetDependency */,
+			);
+			name = BLESKELEUITests;
+			productName = BLESKELEUITests;
+			productReference = 10CA1B031F0C05F600F73D05 /* BLESKELEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10CA1AD91F0C05F600F73D05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = 4iiii;
+				TargetAttributes = {
+					10CA1AE01F0C05F600F73D05 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZBNHE8X5F9;
+						ProvisioningStyle = Automatic;
+					};
+					10CA1AF71F0C05F600F73D05 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZBNHE8X5F9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 10CA1AE01F0C05F600F73D05;
+					};
+					10CA1B021F0C05F600F73D05 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZBNHE8X5F9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 10CA1AE01F0C05F600F73D05;
+					};
+				};
+			};
+			buildConfigurationList = 10CA1ADC1F0C05F600F73D05 /* Build configuration list for PBXProject "BLESKELE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10CA1AD81F0C05F600F73D05;
+			productRefGroup = 10CA1AE21F0C05F600F73D05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10CA1AE01F0C05F600F73D05 /* BLESKELE */,
+				10CA1AF71F0C05F600F73D05 /* BLESKELETests */,
+				10CA1B021F0C05F600F73D05 /* BLESKELEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10CA1ADF1F0C05F600F73D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA1AF21F0C05F600F73D05 /* LaunchScreen.storyboard in Resources */,
+				10CA1AEF1F0C05F600F73D05 /* Assets.xcassets in Resources */,
+				10CA1AEA1F0C05F600F73D05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1AF61F0C05F600F73D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1B011F0C05F600F73D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10CA1ADD1F0C05F600F73D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA1B1A1F0C21B900F73D05 /* BLESkeleton.swift in Sources */,
+				10CA1AE71F0C05F600F73D05 /* ViewController.swift in Sources */,
+				10CA1B161F0C06E100F73D05 /* BluetoothViewController.swift in Sources */,
+				10CA1AED1F0C05F600F73D05 /* BLESKELE.xcdatamodeld in Sources */,
+				10CA1AE51F0C05F600F73D05 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1AF41F0C05F600F73D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA1AFD1F0C05F600F73D05 /* BLESKELETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CA1AFF1F0C05F600F73D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA1B081F0C05F600F73D05 /* BLESKELEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10CA1AFA1F0C05F600F73D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CA1AE01F0C05F600F73D05 /* BLESKELE */;
+			targetProxy = 10CA1AF91F0C05F600F73D05 /* PBXContainerItemProxy */;
+		};
+		10CA1B051F0C05F600F73D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CA1AE01F0C05F600F73D05 /* BLESKELE */;
+			targetProxy = 10CA1B041F0C05F600F73D05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10CA1AE81F0C05F600F73D05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CA1AE91F0C05F600F73D05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10CA1AF01F0C05F600F73D05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CA1AF11F0C05F600F73D05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10CA1B0A1F0C05F600F73D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10CA1B0B1F0C05F600F73D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10CA1B0D1F0C05F600F73D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		10CA1B0E1F0C05F600F73D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		10CA1B101F0C05F600F73D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLESKELE.app/BLESKELE";
+			};
+			name = Debug;
+		};
+		10CA1B111F0C05F600F73D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLESKELE.app/BLESKELE";
+			};
+			name = Release;
+		};
+		10CA1B131F0C05F600F73D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BLESKELE;
+			};
+			name = Debug;
+		};
+		10CA1B141F0C05F600F73D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				INFOPLIST_FILE = BLESKELEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BLESKELE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10CA1ADC1F0C05F600F73D05 /* Build configuration list for PBXProject "BLESKELE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CA1B0A1F0C05F600F73D05 /* Debug */,
+				10CA1B0B1F0C05F600F73D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CA1B0C1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CA1B0D1F0C05F600F73D05 /* Debug */,
+				10CA1B0E1F0C05F600F73D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CA1B0F1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CA1B101F0C05F600F73D05 /* Debug */,
+				10CA1B111F0C05F600F73D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CA1B121F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CA1B131F0C05F600F73D05 /* Debug */,
+				10CA1B141F0C05F600F73D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10CA1AEB1F0C05F600F73D05 /* BLESKELE.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10CA1AEC1F0C05F600F73D05 /* BLESKELE.xcdatamodel */,
+			);
+			currentVersion = 10CA1AEC1F0C05F600F73D05 /* BLESKELE.xcdatamodel */;
+			path = BLESKELE.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10CA1AD91F0C05F600F73D05 /* Project object */;
+}
