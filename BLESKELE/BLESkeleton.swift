@@ -16,6 +16,7 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
     var listOfDevicesDiscovered: deviceModelList = deviceModelList()
     var deviceModelDelegate: deviceModelListUpdateDelegate?
     var discoveredPeripherals: [CBPeripheral] = [CBPeripheral]()
+    var connectedPeripherals: [CBPeripheral] = [CBPeripheral]()
     var connectedToDevice: Bool = false
     //var peripheral:CBPeripheral
     
@@ -68,7 +69,7 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
                 manager?.connect(peripheral)
                 let dispatchTime = DispatchTime.now() + .seconds(30)
                 DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: { 
-                    if let _ = self.deviceModelDelegate?.deviceToConnect , !self.connectedToDevice{
+                    if let _ = self.deviceModelDelegate?.deviceToConnect , self.checkIfConnectedToDevice(device: thisDevice){
                         self.deviceModelDelegate?.deviceToConnect(didConnect: false, withDevice: thisDevice, isTimeout: true)
                         return
                     }
@@ -77,6 +78,18 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
             }
         }
         print("device unable to connect cannot find peripheral")
+    }
+    
+    func checkIfConnectedToDevice(device: deviceModelList.deviceModel) -> Bool{
+        var connected = false
+        for peripheral in connectedPeripherals{
+            if peripheral.identifier == device.deviceIdentifier
+            {
+                connected = true
+                break
+            }
+        }
+        return connected
     }
     
     func disconnectDevice(thisDevice: deviceModelList.deviceModel){
@@ -92,11 +105,16 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral){
         print("device connected")
         self.connectedToDevice = true
+        connectedPeripherals.append(peripheral)
         if let _ = self.deviceModelDelegate?.deviceToConnect{
             if let devices = listOfDevicesDiscovered.getAllDiscoveredDevices(){
                 for device in devices{
                     if device.deviceIdentifier == peripheral.identifier
                     {
+                        listOfDevicesDiscovered.setDeviceConnected(forDevice: device, toState: true)
+                        if let delegateCallback = deviceModelDelegate?.deviceModelListWasUpdated{
+                            delegateCallback(listOfDevicesDiscovered)
+                        }
                         self.deviceModelDelegate?.deviceToConnect(didConnect: true, withDevice: device, isTimeout: false)
                         return
                     }
@@ -127,12 +145,21 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
         if let _ = error{
             print(error!.localizedDescription)
         }
+        for (index,connectedPeripheral) in connectedPeripherals.enumerated(){
+            if peripheral.identifier == connectedPeripheral.identifier{
+                connectedPeripherals.remove(at: index)
+            }
+        }
         self.connectedToDevice = false
         if let _ = self.deviceModelDelegate?.deviceToConnect{
             if let devices = listOfDevicesDiscovered.getAllDiscoveredDevices(){
                 for device in devices{
                     if device.deviceIdentifier == peripheral.identifier
                     {
+                        listOfDevicesDiscovered.setDeviceConnected(forDevice: device, toState: false)
+                        if let delegateCallback = deviceModelDelegate?.deviceModelListWasUpdated{
+                            delegateCallback(listOfDevicesDiscovered)
+                        }
                         self.deviceModelDelegate?.deviceToConnect(didConnect: false, withDevice: device, isTimeout: false)
                         return
                     }
@@ -148,6 +175,7 @@ public class deviceModelList{
         var deviceName: String
         var deviceRSSI: Int
         var deviceIdentifier: UUID
+        var deviceIsConnected: Bool = false
         init(withDeviceName: String, withDeviceRSSI: String, withDeviceIdentifier: UUID){
             self.deviceName = withDeviceName
             self.deviceRSSI = Int(withDeviceRSSI)!
@@ -187,6 +215,14 @@ public class deviceModelList{
     func getDevice(forIndex: Int) -> deviceModel{
         return deviceList[forIndex]
         
+    }
+    
+    func setDeviceConnected(forDevice: deviceModel, toState: Bool){
+        for device in deviceList{
+            if device.deviceIdentifier == forDevice.deviceIdentifier{
+                device.deviceIsConnected = toState
+            }
+        }
     }
     
 }

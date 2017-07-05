@@ -67,6 +67,10 @@ class BluetoothViewController: UICollectionViewController, deviceModelListUpdate
         label.highlightedTextColor = UIColor.red
         label.backgroundColor = UIColor.white
         label.textColor = UIColor.black
+        if (skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row).deviceIsConnected){
+            label.backgroundColor = UIColor.cyan
+            label.textColor = UIColor.orange
+        }
         cell.contentView.addSubview(label)
         return cell
     }
@@ -86,19 +90,36 @@ class BluetoothViewController: UICollectionViewController, deviceModelListUpdate
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        let actionMenu = UIAlertController(title: (skeleton.listOfDevicesDiscovered.getAllDiscoveredDevices() != nil ? "\(skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row).deviceName)" : "Unspecified"), message: "Select connect to begin pairing", preferredStyle: .actionSheet)
-        let connectAction = UIAlertAction(title: "Connect", style: .default) { (connectAction) in
-            //handle connect here
-            self.skeleton.connectDevice(thisDevice: self.skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row))
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
-            //handle
-            
-        }
-        actionMenu.addAction(connectAction)
-        actionMenu.addAction(cancelAction)
-        self.present(actionMenu, animated: false) {
-            //completioncodehere
+        
+        if !skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row).deviceIsConnected{
+            let actionMenu = UIAlertController(title: (skeleton.listOfDevicesDiscovered.getAllDiscoveredDevices() != nil ? "\(skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row).deviceName)" : "Unspecified"), message: "Select connect to begin pairing", preferredStyle: .actionSheet)
+            let connectAction = UIAlertAction(title: "Connect", style: .default) { (connectAction) in
+                //handle connect here
+                self.skeleton.connectDevice(thisDevice: self.skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row))
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
+                //handle
+                
+            }
+            actionMenu.addAction(connectAction)
+            actionMenu.addAction(cancelAction)
+            self.present(actionMenu, animated: false) {
+                //completioncodehere
+            }
+        }else{
+            let actionMenu = UIAlertController(title: (skeleton.listOfDevicesDiscovered.getAllDiscoveredDevices() != nil ? "\(skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row).deviceName)" : "Unspecified"), message: "Select disconnect to cancel pairing", preferredStyle: .actionSheet)
+            let disconnectAction = UIAlertAction(title: "Disconnect", style: .default) { (disconnectAction) in
+                //handle connect here
+                self.skeleton.disconnectDevice(thisDevice: self.skeleton.listOfDevicesDiscovered.getDevice(forIndex: indexPath.row))
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
+                //handle
+                
+            }
+            actionMenu.addAction(disconnectAction)
+            actionMenu.addAction(cancelAction)
+            self.present(actionMenu, animated: false)
+                
         }
     }
     
