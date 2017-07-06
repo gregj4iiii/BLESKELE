@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import HockeySDK
+import CocoaLumberjack
 
 
 @UIApplicationMain
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Hockey App Configuration
         //[[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"be1c2b89e69942d4be00bb6a9844d3c3"];
         BITHockeyManager.shared().configure(withIdentifier: "be1c2b89e69942d4be00bb6a9844d3c3")
         // Do some additional configuration if needed here
@@ -27,6 +30,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
         BITHockeyManager.shared().authenticator.authenticateInstallation()
         BITHockeyManager.shared().testIdentifier()
+        
+        //CocoaLumberjack Configuration
+        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
+        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
+        
+        let fileLogger: DDFileLogger = DDFileLogger() // File Logger
+        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+        DDLog.add(fileLogger)
+        
+        DDLogVerbose("Verbose");
+        DDLogDebug("Debug");
+        DDLogInfo("Info");
+        DDLogWarn("Warn");
+        DDLogError("Error");
+        
+        print(fileLogger.logFileManager.logsDirectory)
 
         
         return true

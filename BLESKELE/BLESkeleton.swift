@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
 import CoreBluetooth
+import CocoaLumberjack
 
 class BLESkeleton: NSObject, CBCentralManagerDelegate{
     
@@ -34,16 +34,16 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
         if central.state==CBManagerState.poweredOn {
             central.scanForPeripherals(withServices: nil)
         }else{
-            print("Bluetooth unavailable")
+            DDLogDebug("Bluetooth unavailable")
         }
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        //print("discovered \(peripheral) with advertismentData \(advertisementData) with rssi \(RSSI)")
+        //DDLogDebug("discovered \(peripheral) with advertismentData \(advertisementData) with rssi \(RSSI)")
         if let _ = peripheral.name {
             let justDiscovered = deviceModelList.deviceModel.init(withDeviceName: (peripheral.name != nil ? "\(peripheral.name!)" : "Unknown"), withDeviceRSSI: "\(RSSI)", withDeviceIdentifier: peripheral.identifier)
             listOfDevicesDiscovered.updateModelWith(deviceDiscovered: justDiscovered)
-            //print("number of discovered devices:" + (listOfDevicesDiscovered.getAllDiscoveredDevices() != nil ? "\(listOfDevicesDiscovered.getAllDiscoveredDevices()!.count)" : "Empty") )
+            //DDLogDebug("number of discovered devices:" + (listOfDevicesDiscovered.getAllDiscoveredDevices() != nil ? "\(listOfDevicesDiscovered.getAllDiscoveredDevices()!.count)" : "Empty") )
             discoveredPeripherals.append(peripheral)
             if let delegateCallback = deviceModelDelegate?.deviceModelListWasUpdated{
                 delegateCallback(listOfDevicesDiscovered)
@@ -69,7 +69,7 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
                 manager?.connect(peripheral)
                 let dispatchTime = DispatchTime.now() + .seconds(30)
                 DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: {
-                    self.disconnectDevice(thisDevice: thisDevice)
+                    //self.disconnectDevice(thisDevice: thisDevice)
                     if let _ = self.deviceModelDelegate?.deviceToConnect , !self.checkIfConnectedToDevice(device: thisDevice){
                         self.deviceModelDelegate?.deviceToConnect(didConnect: false, withDevice: thisDevice, isTimeout: true)
                         return
@@ -78,7 +78,7 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
                 return
             }
         }
-        print("device unable to connect cannot find peripheral")
+        DDLogDebug("device unable to connect cannot find peripheral")
     }
     
     func checkIfConnectedToDevice(device: deviceModelList.deviceModel) -> Bool{
@@ -100,11 +100,11 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
                 return
             }
         }
-        print("device unable to disonnect peripheral")
+        DDLogDebug("device unable to disonnect peripheral")
     }
     // MARK: - CBCManager delegate protocol methods
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral){
-        print("device connected")
+        DDLogDebug("device connected")
         self.connectedToDevice = true
         connectedPeripherals.append(peripheral)
         if let _ = self.deviceModelDelegate?.deviceToConnect{
@@ -124,9 +124,9 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
         }
     }
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?){
-        print("device failed to connect")
+        DDLogDebug("device failed to connect")
         if let _ = error{
-            print(error!.localizedDescription)
+            DDLogDebug(error!.localizedDescription)
         }
         if let _ = self.deviceModelDelegate?.deviceToConnect{
             if let devices = listOfDevicesDiscovered.getAllDiscoveredDevices(){
@@ -142,9 +142,9 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?){
-        print("disconnected from " + ( peripheral.name != nil ? "\(peripheral.name!)" : "Unknown") )
+        DDLogDebug("disconnected from " + ( peripheral.name != nil ? "\(peripheral.name!)" : "Unknown") )
         if let _ = error{
-            print(error!.localizedDescription)
+            DDLogDebug(error!.localizedDescription)
         }
         for (index,connectedPeripheral) in connectedPeripherals.enumerated(){
             if peripheral.identifier == connectedPeripheral.identifier{

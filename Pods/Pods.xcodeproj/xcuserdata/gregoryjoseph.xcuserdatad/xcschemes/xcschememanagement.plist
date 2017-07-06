@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BLESKELE.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BLESKELETests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BLESKELEUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6593CB8536FDE43A4B4A9CF926CD48BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6889A0FBA30F6BFFD00F70ABA40EF857</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9709635CA61F7F72E71552ACC5E71EC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACF3734CA210212C611CD52F4498C49D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

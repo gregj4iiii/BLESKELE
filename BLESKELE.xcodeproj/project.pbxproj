@@ -19,6 +19,9 @@
 		10CA1B081F0C05F600F73D05 /* BLESKELEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B071F0C05F600F73D05 /* BLESKELEUITests.swift */; };
 		10CA1B161F0C06E100F73D05 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B151F0C06E100F73D05 /* BluetoothViewController.swift */; };
 		10CA1B1A1F0C21B900F73D05 /* BLESkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1B191F0C21B900F73D05 /* BLESkeleton.swift */; };
+		4941C347062471F9F4C2C9A4 /* Pods_BLESKELETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCAA2FE9438199BD0E31BAC /* Pods_BLESKELETests.framework */; };
+		E7B3A1CED1D8B9655E59F732 /* Pods_BLESKELEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D098C3CDA106CF1B2E29B19 /* Pods_BLESKELEUITests.framework */; };
+		EB6DCA5B0C309CF4997DFC3A /* Pods_BLESKELE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3984E8D2D6983068B5CEB84 /* Pods_BLESKELE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FB85126CA48C6CB46B6EFF /* Pods-BLESKELE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELE/Pods-BLESKELE.release.xcconfig"; sourceTree = "<group>"; };
 		1009B1811F0D8BF00080912A /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		1009B1821F0D8BF00080912A /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		109F98CD1F0EAAFF005E0158 /* default.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = default.sh; sourceTree = "<group>"; };
+		109F98CE1F0EB42B005E0158 /* firstScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firstScript.sh; sourceTree = "<group>"; };
 		10CA1AE11F0C05F600F73D05 /* BLESKELE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESKELE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA1AE41F0C05F600F73D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA1AE61F0C05F600F73D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 		10CA1B091F0C05F600F73D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CA1B151F0C06E100F73D05 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		10CA1B191F0C21B900F73D05 /* BLESkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESkeleton.swift; sourceTree = "<group>"; };
+		1D098C3CDA106CF1B2E29B19 /* Pods_BLESKELEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AB19C7821FFFE6D83AD681 /* Pods-BLESKELETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELETests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELETests/Pods-BLESKELETests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA011B086E53605374B00C7 /* Pods-BLESKELETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELETests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELETests/Pods-BLESKELETests.release.xcconfig"; sourceTree = "<group>"; };
+		8AEA49E470EAE023549914AE /* Pods-BLESKELEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELEUITests/Pods-BLESKELEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A82873A3639FA5A3F5AC26A3 /* Pods-BLESKELEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELEUITests/Pods-BLESKELEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCAA2FE9438199BD0E31BAC /* Pods_BLESKELETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3984E8D2D6983068B5CEB84 /* Pods_BLESKELE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD18AA2785DABD180DE17AB7 /* Pods-BLESKELE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLESKELE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLESKELE/Pods-BLESKELE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1009B1831F0D8BF00080912A /* HockeySDK.framework in Frameworks */,
+				EB6DCA5B0C309CF4997DFC3A /* Pods_BLESKELE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4941C347062471F9F4C2C9A4 /* Pods_BLESKELETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B3A1CED1D8B9655E59F732 /* Pods_BLESKELEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,14 +112,36 @@
 			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
 			sourceTree = "<group>";
 		};
-		10CA1AD81F0C05F600F73D05 = {
+		107E6B8F1F0E9D30003829D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1009B1801F0D8BF00080912A /* HockeySDK.embeddedframework */,
+				D3984E8D2D6983068B5CEB84 /* Pods_BLESKELE.framework */,
+				BFCAA2FE9438199BD0E31BAC /* Pods_BLESKELETests.framework */,
+				1D098C3CDA106CF1B2E29B19 /* Pods_BLESKELEUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		109F98CC1F0EAACC005E0158 /* BuildScript */ = {
+			isa = PBXGroup;
+			children = (
+				109F98CD1F0EAAFF005E0158 /* default.sh */,
+				109F98CE1F0EB42B005E0158 /* firstScript.sh */,
+			);
+			path = BuildScript;
+			sourceTree = "<group>";
+		};
+		10CA1AD81F0C05F600F73D05 = {
+			isa = PBXGroup;
+			children = (
+				109F98CC1F0EAACC005E0158 /* BuildScript */,
+				107E6B8F1F0E9D30003829D0 /* Frameworks */,
 				10CA1AE31F0C05F600F73D05 /* BLESKELE */,
 				10CA1AFB1F0C05F600F73D05 /* BLESKELETests */,
 				10CA1B061F0C05F600F73D05 /* BLESKELEUITests */,
 				10CA1AE21F0C05F600F73D05 /* Products */,
+				78BCB902545007048D9DA852 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +189,19 @@
 			path = BLESKELEUITests;
 			sourceTree = "<group>";
 		};
+		78BCB902545007048D9DA852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD18AA2785DABD180DE17AB7 /* Pods-BLESKELE.debug.xcconfig */,
+				08FB85126CA48C6CB46B6EFF /* Pods-BLESKELE.release.xcconfig */,
+				62AB19C7821FFFE6D83AD681 /* Pods-BLESKELETests.debug.xcconfig */,
+				7AA011B086E53605374B00C7 /* Pods-BLESKELETests.release.xcconfig */,
+				A82873A3639FA5A3F5AC26A3 /* Pods-BLESKELEUITests.debug.xcconfig */,
+				8AEA49E470EAE023549914AE /* Pods-BLESKELEUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +209,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10CA1B0C1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELE" */;
 			buildPhases = (
+				E3EF155C11A3485A737BA3ED /* [CP] Check Pods Manifest.lock */,
 				10CA1ADD1F0C05F600F73D05 /* Sources */,
 				10CA1ADE1F0C05F600F73D05 /* Frameworks */,
 				10CA1ADF1F0C05F600F73D05 /* Resources */,
 				1009B1721F0D8A7D0080912A /* ShellScript */,
+				F3E97E02D124CB62BF799A43 /* [CP] Embed Pods Frameworks */,
+				B73A27F6838C247AE539711E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10CA1B0F1F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELETests" */;
 			buildPhases = (
+				A1E41EB4EF69D3A9833FF4A8 /* [CP] Check Pods Manifest.lock */,
 				10CA1AF41F0C05F600F73D05 /* Sources */,
 				10CA1AF51F0C05F600F73D05 /* Frameworks */,
 				10CA1AF61F0C05F600F73D05 /* Resources */,
+				6A800C750C5E23950AB3A48A /* [CP] Embed Pods Frameworks */,
+				D92F97FB8CC881E6270F4136 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10CA1B121F0C05F600F73D05 /* Build configuration list for PBXNativeTarget "BLESKELEUITests" */;
 			buildPhases = (
+				D7EB67DB9401D2247605754C /* [CP] Check Pods Manifest.lock */,
 				10CA1AFF1F0C05F600F73D05 /* Sources */,
 				10CA1B001F0C05F600F73D05 /* Frameworks */,
 				10CA1B011F0C05F600F73D05 /* Resources */,
+				445CF74339C6F47C7B1B366D /* [CP] Embed Pods Frameworks */,
+				95EEF8BEC601EB8510E2761E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,8 +280,8 @@
 				TargetAttributes = {
 					10CA1AE01F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = EUL7UYLX84;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = ZBNHE8X5F9;
+						ProvisioningStyle = Automatic;
 					};
 					10CA1AF71F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -296,7 +357,142 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+			shellScript = "chmod u+x ${PROJECT_DIR}/BuildScript/default.sh\n\"${PROJECT_DIR}/BuildScript/default.sh\"";
+		};
+		445CF74339C6F47C7B1B366D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELEUITests/Pods-BLESKELEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A800C750C5E23950AB3A48A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELETests/Pods-BLESKELETests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95EEF8BEC601EB8510E2761E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELEUITests/Pods-BLESKELEUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E41EB4EF69D3A9833FF4A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B73A27F6838C247AE539711E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELE/Pods-BLESKELE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7EB67DB9401D2247605754C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D92F97FB8CC881E6270F4136 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELETests/Pods-BLESKELETests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EF155C11A3485A737BA3ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E97E02D124CB62BF799A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLESKELE/Pods-BLESKELE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -461,10 +657,11 @@
 		};
 		10CA1B0D1F0C05F600F73D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD18AA2785DABD180DE17AB7 /* Pods-BLESKELE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = EUL7UYLX84;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -473,18 +670,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
-				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		10CA1B0E1F0C05F600F73D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FB85126CA48C6CB46B6EFF /* Pods-BLESKELE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = EUL7UYLX84;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZBNHE8X5F9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -493,14 +691,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
-				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		10CA1B101F0C05F600F73D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AB19C7821FFFE6D83AD681 /* Pods-BLESKELETests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +715,7 @@
 		};
 		10CA1B111F0C05F600F73D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA011B086E53605374B00C7 /* Pods-BLESKELETests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +731,7 @@
 		};
 		10CA1B131F0C05F600F73D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82873A3639FA5A3F5AC26A3 /* Pods-BLESKELEUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZBNHE8X5F9;
@@ -545,6 +746,7 @@
 		};
 		10CA1B141F0C05F600F73D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEA49E470EAE023549914AE /* Pods-BLESKELEUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZBNHE8X5F9;
