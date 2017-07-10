@@ -71,8 +71,8 @@
 		5124AEDD28F71F8A1847BF015485037C /* Pods-BLESKELETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLESKELETests.release.xcconfig"; sourceTree = "<group>"; };
 		5335FACAA53E01140FFC3ECBFD65E88C /* Pods-BLESKELE-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLESKELE-acknowledgements.plist"; sourceTree = "<group>"; };
 		5343E5E6005DFBE4042608E7E98FE44C /* Pods-BLESKELEUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLESKELEUITests-dummy.m"; sourceTree = "<group>"; };
-		5376CDF4E654F3950CC6FD4FC3E7B95B /* Pods_BLESKELE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60FCB66FA6249FA0A25808050AD788BE /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		5376CDF4E654F3950CC6FD4FC3E7B95B /* Pods_BLESKELE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLESKELE.framework; path = "Pods-BLESKELE.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FCB66FA6249FA0A25808050AD788BE /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		64A63AA1C682BCE9A3F25C5BBE960BFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		676EA38B74D95015FFC2ACC7A5345417 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
@@ -80,15 +80,15 @@
 		77BE6FCE87799B2D3DE8A28EDFC90D95 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		7C66934436C32E40B9568456E4DCA8F0 /* Pods-BLESKELE-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLESKELE-resources.sh"; sourceTree = "<group>"; };
 		843994FBD2E4CED632E7F038280F91BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AB77C608F270639FB948DD6BB474682 /* Pods-BLESKELE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLESKELE.modulemap"; sourceTree = "<group>"; };
+		8AB77C608F270639FB948DD6BB474682 /* Pods-BLESKELE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLESKELE.modulemap"; sourceTree = "<group>"; };
 		8E54B5DC0F5C635FF0C173B6421A375C /* Pods-BLESKELE-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLESKELE-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
-		97FC6F371800FA711220777FAF28B0A4 /* Pods-BLESKELEUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLESKELEUITests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97FC6F371800FA711220777FAF28B0A4 /* Pods-BLESKELEUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLESKELEUITests.modulemap"; sourceTree = "<group>"; };
 		9D026E5367362AB2AE2C2055BDFE9492 /* Pods-BLESKELEUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLESKELEUITests-frameworks.sh"; sourceTree = "<group>"; };
-		9EBAE3A6A195B4B9F7F3ACF81EAB0973 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EBAE3A6A195B4B9F7F3ACF81EAB0973 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0755C530EB87E72B9AE87D095078945 /* Pods-BLESKELEUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLESKELEUITests-umbrella.h"; sourceTree = "<group>"; };
 		A924ED5F723A39E0F1B5E2414BA7A9D3 /* Pods-BLESKELETests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLESKELETests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B1295B5BCC8DDEDF4303C5ADE3AF66EB /* Pods_BLESKELETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1295B5BCC8DDEDF4303C5ADE3AF66EB /* Pods_BLESKELETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLESKELETests.framework; path = "Pods-BLESKELETests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30261617A0FCCD8A3F92E1857EB9DE2 /* Pods-BLESKELEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLESKELEUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B502E6263712AD9F6B7CD1D0B2D5E09B /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
 		C18618620FB0EAD4C9E48B373F24BEA8 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		CABE0705A7032C6D1D042A5883579DA3 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
 		CB1B60F5FB8FB06203EEDB8FF7C0A727 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
 		CB6375E2980078033ABB933E94D95D1D /* Pods-BLESKELE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLESKELE-umbrella.h"; sourceTree = "<group>"; };
-		CCAD1358B4E56B63FC4AC1DC6F5A5BED /* Pods-BLESKELETests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLESKELETests.modulemap"; sourceTree = "<group>"; };
+		CCAD1358B4E56B63FC4AC1DC6F5A5BED /* Pods-BLESKELETests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLESKELETests.modulemap"; sourceTree = "<group>"; };
 		CD8E79CF2E891B695D17609CA1A5028B /* Pods-BLESKELETests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLESKELETests-frameworks.sh"; sourceTree = "<group>"; };
 		CEF7DE76830A919198AB0F756AEDF63B /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		D045D0774B28C23A3C9483BCACC6A546 /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		D30D87FDA78050487EF0E552DEDA048F /* Pods-BLESKELEUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLESKELEUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D32EA39E8D96EACA26F667D7B5E9FAC9 /* Pods-BLESKELETests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLESKELETests-umbrella.h"; sourceTree = "<group>"; };
 		DB1DA3DA246344E5CED081AFF3AE6F0F /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
-		DDEE6BB261635BD0567A59E1A5B2AD00 /* Pods_BLESKELEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLESKELEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEE6BB261635BD0567A59E1A5B2AD00 /* Pods_BLESKELEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLESKELEUITests.framework; path = "Pods-BLESKELEUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1655AD19DDD79A10D429B1BFC3203ED /* Pods-BLESKELETests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLESKELETests-dummy.m"; sourceTree = "<group>"; };
 		E2D9AE539EF48D6AC8AA4B6F91DF9FD4 /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
 		EFD3A18D9E4B8331C3CF2D8191EF2D55 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
@@ -185,6 +185,7 @@
 				432E9666CAA6D2CBB2C02D69B4F24299 /* Support Files */,
 				9EB818E4CBEC491B28E5CE686B9524B8 /* Swift */,
 			);
+			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};

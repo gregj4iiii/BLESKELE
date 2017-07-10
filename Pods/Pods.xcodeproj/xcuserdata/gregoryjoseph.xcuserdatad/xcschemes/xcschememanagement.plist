@@ -4,22 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CocoaLumberjack.xcscheme_^#shared#^_</key>
+		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BLESKELE.xcscheme_^#shared#^_</key>
+		<key>Pods-BLESKELE.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BLESKELETests.xcscheme_^#shared#^_</key>
+		<key>Pods-BLESKELETests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BLESKELEUITests.xcscheme_^#shared#^_</key>
+		<key>Pods-BLESKELEUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

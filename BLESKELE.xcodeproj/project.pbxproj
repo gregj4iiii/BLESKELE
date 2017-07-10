@@ -280,8 +280,8 @@
 				TargetAttributes = {
 					10CA1AE01F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZBNHE8X5F9;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = EUL7UYLX84;
+						ProvisioningStyle = Manual;
 					};
 					10CA1AF71F0C05F600F73D05 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -660,8 +660,8 @@
 			baseConfigurationReference = DD18AA2785DABD180DE17AB7 /* Pods-BLESKELE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = EUL7UYLX84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -670,8 +670,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
+				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -681,8 +681,8 @@
 			baseConfigurationReference = 08FB85126CA48C6CB46B6EFF /* Pods-BLESKELE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZBNHE8X5F9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = EUL7UYLX84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -691,8 +691,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.4iiii.BLESKELE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f2e3517f-9574-467e-953e-fb4226f22732";
+				PROVISIONING_PROFILE_SPECIFIER = hockeyAppTest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
