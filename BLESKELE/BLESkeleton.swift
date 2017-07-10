@@ -63,7 +63,7 @@ class BLESkeleton: NSObject, CBCentralManagerDelegate{
     }
     
     func connectDevice(thisDevice: deviceModelList.deviceModel){
-        self.manager?.stopScan()
+        //self.manager?.stopScan()
         for peripheral in discoveredPeripherals{
             if peripheral.identifier == thisDevice.deviceIdentifier{
                 manager?.connect(peripheral)
