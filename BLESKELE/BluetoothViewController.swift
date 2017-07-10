@@ -9,6 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+private let unNecesssaryBool: Bool = false
 
 class BluetoothViewController: UICollectionViewController, deviceModelListUpdateDelegate {
     
