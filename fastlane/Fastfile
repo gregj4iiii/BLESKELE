@@ -56,6 +56,27 @@ echo "ipa path is"
 echo ENV['IPA_BOT_PATH']
 hockey(api_token:”2aeb8091b96b40d48d90a91c5c51c651”, ipa: ENV['IPA_BOT_PATH'])
 end
+
+
+lane :bump_build do
+# Ensure that your git status is not dirty
+ensure_git_status_clean
+
+# Increment the build number (not the version number)
+# Providing the xcodeproj is optional
+increment_build_number()
+
+# Commit the version bump
+commit_version_bump()
+
+# Add a git tag for this build. This will automatically
+# use an appropriate git tag name
+add_git_tag
+
+# Push the new commit and tag back to your git remote
+push_to_git_remote
+end
+
   after_all do |lane|
     # This block is called, only if the executed lane was successful
 
@@ -72,9 +93,6 @@ end
   end
 end
 
-lane :echo_Test do
-echo ENV['POTENTIAL_DIR']
-end
 
 
 # More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
