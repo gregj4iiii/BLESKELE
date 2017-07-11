@@ -49,11 +49,13 @@ platform :ios do
 
   # You can define as many lanes as you want
 lane :hockeyapp_lane do
-cert
-sigh(app_identifier: “com.4iiii.BLESKELE.hockeyApp”)
-gym(scheme: “BLESKELE”,
+#cert
+#sigh(app_identifier: “com.4iiii.BLESKELE.hockeyApp”)
+#gym(scheme: “BLESKELE”,
       workspace: “BLESKELE.xcworkspace", export_method: "development")
-hockey(api_token:”2aeb8091b96b40d48d90a91c5c51c651”)
+echo "ipa path is"
+echo ENV['IPA_BOT_PATH']
+hockey(api_token:”2aeb8091b96b40d48d90a91c5c51c651”, ipa: ENV['IPA_BOT_PATH'])
 end
   after_all do |lane|
     # This block is called, only if the executed lane was successful
@@ -69,6 +71,10 @@ end
     #   success: false
     # )
   end
+end
+
+lane :echo_Test do
+echo ENV['POTENTIAL_DIR']
 end
 
 

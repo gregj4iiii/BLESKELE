@@ -29,6 +29,14 @@ xcode-select --install
 </table>
 
 # Available Actions
+### echo_Test
+```
+fastlane echo_Test
+```
+
+
+----
+
 ## iOS
 ### ios test
 ```
