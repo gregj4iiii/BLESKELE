@@ -52,7 +52,7 @@ lane :hockeyapp_lane do
 cert
 sigh(app_identifier: “com.4iiii.BLESKELE.hockeyApp”)
 gym(scheme: “BLESKELE”,
-      workspace: “BLESKELE.xcworkspace")
+      workspace: “BLESKELE.xcworkspace", export_method: "development")
 hockey(api_token:”2aeb8091b96b40d48d90a91c5c51c651”)
 end
   after_all do |lane|
